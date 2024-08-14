@@ -1,0 +1,263 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>HairMe | AI-Powered Hairstyle Reccomendations</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'index' %}" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="{% static 'assets/img/logo.png' %}" alt=""> -->
+        <h1 class="sitename">HairMe</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
+        <img src="https://img.freepik.com/free-vector/hand-drawn-people-with-dreadlocks-illustration_23-2149752183.jpg?t=st=1723636531~exp=1723640131~hmac=39ee446d39b20bc8c5d58e618fd30dd6c06396595a8e06ddb0dd72fef7b48fff&w=1380" class="img-fluid animated" alt="" width="300">
+        <h1>Discover your perfect <span>hairstyle</span></h1>
+        <p>Upload your photo, and let AI suggest the best hairstyle that complements your unique face shape.</p>
+        <div class="d-flex">
+          <a href="#why-us" class="btn-get-started scrollto">Get Started</a>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <section id="why-us" class="why-us section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>How it works</h2>
+        <p>See how our system analyzes your features to generate your unique hairstyle</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-4 col-md-6 card aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <span>01</span>
+            <h4>Upload Your Photo</h4>
+            <p>Upload a clear photo of yourself to get started.</p>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6 card aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+            <span>02</span>
+            <h4>Adjust & Preview</h4>
+            <p>Ensure your face is centered and well-lit for the best results.</p>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6 card aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+            <span>03</span>
+            <h4>Analyze Your Face Shape</h4>
+            <p>Our AI identifies your face and head shape for personalized recommendations.</p>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6 card aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+            <span>04</span>
+            <h4>Tell Us Your Style</h4>
+            <p>Share your hairstyle preferences or let us surprise you with options.</p>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6 card aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+            <span>05</span>
+            <h4>Get Instant Recommendations</h4>
+            <p>View AI-generated hairstyles tailored to your face shape.</p>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6 card aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+            <span>06</span>
+            <h4>Save & Share</h4>
+            <p>Save your favorite styles or book an appointment with a stylist directly.</p>
+          </div><!-- End Card Item -->
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Generate your hairstyle</h2>
+        <p>Whether you're looking for a fresh new look or just curious, our advanced AI technology analyzes your face and head shape to recommend hairstyles that suit you best. Fast, personalized, and easy to use!</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <!-- Image preview -->
+                <img id="selected-image" src="{% static 'assets/img/team/team-1.jpg' %}" alt="Selected Image" class="img-fluid p-2">
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-8">
+            <form id="hairstyle-form" class="php-email-form" enctype="multipart/form-data" data-aos="fade-up" data-aos-delay="200">
+              {% csrf_token %}
+              <div class="row gy-4">
+          
+                <div class="col-md-12">
+                  <input type="file" name="image" class="form-control" accept="image/*" onchange="previewImage(event)" required>
+                </div>
+          
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+          
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                </div>
+          
+                <div class="col-md-12">
+                  <textarea class="form-control" name="preferences" rows="4" placeholder="Hairstyle Preferences (optional)"></textarea>
+                </div>
+          
+                <div class="col-md-12">
+                  <button type="submit">Get Hairstyle Recommendation</button>
+                </div>
+
+                <!-- Spinner -->
+                <div class="col-md-12 text-center">
+                  <div id="loadingSpinner" class="spinner-border text-primary" role="status" style="display: none;">
+                      <span class="visually-hidden">Processing...</span>
+                  </div>
+                </div>
+          
+              </div>
+            </form>
+          </div>
+
+          <!-- Result Section -->
+          <div id="recommendation-result" style="display:none;">
+            <h3>Recommended Hairstyle</h3>
+            <p id="recommendation-text"></p>
+          </div>
+
+        </div> 
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">HairMe</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed by <a href="https://github.com/Tobitheprof">Tobi TheRevolutionary</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <!-- JavaScript to handle AJAX and image preview -->
+  <script>
+    function previewImage(event) {
+      var reader = new FileReader();
+      reader.onload = function(){
+        var output = document.getElementById('selected-image');
+        output.src = reader.result;
+      };
+      reader.readAsDataURL(event.target.files[0]);
+    }
+
+    document.getElementById('hairstyle-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      var formData = new FormData(this);
+      var csrfToken = document.querySelector('input[name="csrfmiddlewaretoken"]').value;
+
+      fetch("{% url 'generate_hairstyle' %}", {
+        method: 'POST',
+        headers: {
+          'X-CSRFToken': csrfToken
+        },
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('recommendation-text').innerText = data.recommendation;
+        document.getElementById('recommendation-result').style.display = 'block';
+      })
+      .catch(error => console.error('Error:', error));
+    });
+  </script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
